@@ -6,12 +6,19 @@ class SearchBar extends Component {
 
     this.state = {term: ''};
   }
+
+  onEnterPress(event) {
+    if(event.key == 'Enter'){
+      this.props.onSearchVideo(this.state.term);
+    }
+  }
     
   render() {
     return (
       <div className="search-bar"> 
         <input 
-          onChange={(e) => this.setState({term: e.target.value})}
+          onChange={(event) => this.setState({term: event.target.value})}
+          onKeyPress = {(event) => this.onEnterPress(event)}
           value={this.state.term}
         />
 
