@@ -1,0 +1,92 @@
+.container-fluid {
+  background: #2d2d2d;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,h2,h3,h4.h5,h6,p {
+  color: whitesmoke;
+}
+
+.top-container {
+  margin: 20px;
+  display: flex;
+}
+
+.brand {
+  color: firebrick;
+  display: inline;
+  margin-right: 20px;
+}
+
+.search-bar {
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.search-bar input {
+  width: 75%;
+  background: #2d2d2d;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.search-bar input:hover, .search-bar input:focus {
+  outline-color: firebrick  ;
+}
+
+button.btn-primary {
+  background: firebrick;
+  border: 1px solid firebrick;
+  margin-left: 15px;
+}
+
+button.btn-primary:hover, button.btn-primary:focus {
+  background: #cc2020;
+  border: 1px solid firebrick;
+  margin-left: 15px;
+}
+
+.content-container {
+  display: flex;
+}
+
+/**/
+
+.fa-search {
+  margin-left: 10px;
+  color: white;
+}
+
+.video-detail, .list-group {
+  margin-top: 40px;
+}
+
+
+.video-item img {
+  max-width: 85px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  color: whitesmoke;
+
+}
+
+
+li.list-group-item {
+  cursor: pointer;
+  background: #2d2d2d;
+  border: none;
+
+}
+
+.media-body {
+  color: whitesmoke;
+}
+
